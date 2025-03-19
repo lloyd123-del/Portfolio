@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation ni nga part*/
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: left;
+    position: sticky; /* magpabilin sa taas if e click ang mga pages */
+    top: 0;
+    z-index: 1000; /* ensure nga magpabilin jud */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display as row */
+    justify-content: flex-start; /* sa left ma butang ang mga nav bar */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; /* space sa matag usa */
+    transition: transform 0.2s ease-in-out;
+    color: white;
+}
+
+nav ul li a {
+    color:  #FFC107;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Hover Effect */
+nav ul li:hover {
+    transform: translateY(-3px); /* pampaambak */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Optional: pang change color if ang cursor matunong sa nav bar */
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, about h2{
+    text-align: center;
+    color: #FFC107;;
+}
+
+/* Images */
+.profile-img, .about-img, .contact-img {
+    display: block;
+    max-width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section - Improved Layout with Circular Frame */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 900px;
+    position: relative;
+}
+
+/* Center the About heading to the top */
+#about h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFC107;
+}
+
+/* Left side image with circular frame */
+.about-img {
+    width: 45%; /* Control the size */
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%; /* Circular frame */
+    border: 6px solid #6a5acd; /* Border with soft purple shade */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* Right side text settings */
+.about-text {
+    width: 50%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+/* Adding spacing between paragraphs in About section */
+.about-text p {
+    margin-bottom: 15px;
+}
+
+/* Style the second paragraph differently to highlight other skills */
+.about-text p:last-child {
+    font-weight: bold;
+    color: #42A5F5;;
+    margin-top: 20px;
+}
+
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+    color: #333;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #222;
+    color: #fff;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.testimonial-img-container {
+    border: 4px solid #6a5acd;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.stars {
+    color: #ffcc00;
+    margin: 5px 0;
+}
+
+.testimonial p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:  #1c1c1c;
+}
+
+.contact-img {
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    background-color: #fff;
+    color:  #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Additional Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project-page {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-label {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}

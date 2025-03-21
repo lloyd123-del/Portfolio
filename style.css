@@ -114,6 +114,42 @@ body.light-mode section {
     background-color: #ffcc00;
 }
 
+/*para sa scrolling effect*/
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul li a {
+    color: #FFC107;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FFC107;
+    color: #1c1c1c;
+    transform: translateY(-3px);
+}
+
+/* Active state para sa current page */
+nav ul li a.active {
+    background-color: #FFC107;
+    color: #1c1c1c;
+}
+
+/*customize nga cursor if ma view sa mga nav*/
+body {
+    cursor: url('images/cursor.png'), auto;
+}
+
+a, button {
+    cursor: url('images/cursor-pointer.png'), pointer;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -190,7 +226,7 @@ h1, h2, about h2{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section - Improved Layout with Circular Frame */
+/* About Section - Improved ang Layout sa Circular Frame */
 #about {
     display: flex;
     align-items: center;
@@ -204,7 +240,7 @@ h1, h2, about h2{
     position: relative;
 }
 
-/* Center the About heading to the top */
+/* Center para ang About heading kay sa taas */
 #about h2 {
     position: absolute;
     top: 10px;
@@ -215,13 +251,13 @@ h1, h2, about h2{
     color: #FFC107;
 }
 
-/* Left side image with circular frame */
+/* Left side image sa circular frame */
 .about-img {
-    width: 45%; /* Control the size */
+    width: 45%; 
     max-width: 300px;
     height: auto;
     border-radius: 50%; /* Circular frame */
-    border: 6px solid #6a5acd; /* Border with soft purple shade */
+    border: 6px solid #6a5acd; 
     padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
@@ -236,7 +272,7 @@ h1, h2, about h2{
     margin-right: 20px;
 }
 
-/* Adding spacing between paragraphs in About section */
+/* Adding spacing between sa paragraphs in About section */
 .about-text p {
     margin-bottom: 15px;
 }
@@ -418,42 +454,44 @@ h1, h2, about h2{
     color: #444;
 }
 
-/*para sa footer nga design*/
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+/*para sa go to back nga button*/
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFC107;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.social-links {
-    margin-top: 10px;
+#back-to-top:hover {
+    background-color: #ffcc00;
+}
+
+/*para sa footer nga design*/
+footer {
+    background: linear-gradient(135deg,  #ffcc00, #1c1c1c);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
 }
 
 .social-links img {
     width: 30px;
     margin: 0 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
 }
 
 .social-links img:hover {
     transform: scale(1.2);
+    opacity: 1;
 }
 
-/*para sa get in touch nga button*/
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FFC107;
-    color: #1c1c1c;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-left: 700px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background-color: #ffcc00;
-}

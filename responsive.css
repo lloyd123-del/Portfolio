@@ -1,81 +1,220 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
+    /* Adjust sections for tablets and smaller screens */
     section {
         max-width: 90%;
+        margin: 30px auto;
+        padding: 20px;
     }
-    
-    .projects-grid {
-        grid-template-columns: 1fr 1fr;
+
+    /* Adjust project grid for tablets */
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
-    
+
+    /* Center contact items */
     .contact-item {
         width: 80%;
+        margin: 10px auto;
+    }
+
+    /* Adjust navigation for tablets */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
     }
 }
 
 @media (max-width: 768px) {
+    /* Stack navigation items vertically */
     nav ul {
         flex-direction: column;
-        text-align: left;
+        align-items: center;
+        text-align: center;
     }
 
     nav ul li {
         margin-bottom: 10px;
     }
 
+    /* Adjust section padding and margins */
     section {
         margin: 20px auto;
         padding: 15px;
     }
 
-    .projects-grid {
+    /* Stack project items vertically */
+    .projects-container {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
+    /* Full width for contact items */
     .contact-item {
         width: 100%;
     }
 
-    h1, h2 {
-        font-size: 24px;
+    /* Adjust font sizes for better readability */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    section {
-        padding: 10px;
+        font-size: 1rem;
     }
 
-    h1, h2 {
-        font-size: 20px;
+    /* Adjust about section layout */
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    p {
-        font-size: 12px;
+    .about-img {
+        width: 60%;
+        margin: 20px auto;
     }
 
-    .profile-img, .about-img, .contact-img {
-        max-width: 80px;
+    .about-text {
+        width: 100%;
+        margin-right: 0;
     }
-}
 
-/*another nga optimization para sa mobile nga design*/
-@media (max-width: 768px) {
-    nav ul {
+    /* Adjust skill bars */
+    .skill-bar {
+        width: 100%;
+    }
+
+    /* Adjust testimonial layout */
+    .testimonials-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .about-text, .about-img {
+    .testimonial {
         width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for small mobile devices */
+    section {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust profile images */
+    .profile-img, .about-img, .contact-img {
+        max-width: 100px;
+    }
+
+    /* Adjust project items */
+    .project-item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust contact items */
+    .contact-item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust footer */
+    footer {
+        padding: 20px 10px;
+    }
+
+    .social-links img {
+        width: 25px;
+        margin: 0 5px;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Center-align text in the home section */
+    #home {
         text-align: center;
     }
 
-    .projects-container {
-        flex-direction: column;
+    /* Adjust the hero section padding */
+    #home {
+        padding: 50px 10px;
+    }
+
+    /* Make the CTA button full width */
+    .cta-button {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Adjust the theme toggle button */
+    #theme-toggle {
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Adjust the about section image */
+    .about-img {
+        width: 50%;
+    }
+
+    /* Adjust the testimonials section */
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-name {
+        font-size: 1rem;
+    }
+
+    .testimonial p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ensure images don't overflow on small screens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve readability for small screens */
+body {
+    line-height: 1.5;
+}
+
+/* Adjust the footer for small screens */
+@media (max-width: 480px) {
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .social-links img {
+        width: 20px;
     }
 }

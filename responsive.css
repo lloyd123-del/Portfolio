@@ -1,13 +1,13 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
-    /* Adjust sections for tablets and smaller screens */
+    /* Adjust sections sa mga cp, tablets*/
     section {
         max-width: 90%;
         margin: 30px auto;
         padding: 20px;
     }
 
-    /* Adjust project grid for tablets */
+    /* Adjust ang project grid para sa mobile */
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
@@ -19,7 +19,7 @@
         margin: 10px auto;
     }
 
-    /* Adjust navigation for tablets */
+    /* Adjust navigation para sa mobile */
     nav ul {
         flex-wrap: wrap;
         justify-content: center;

@@ -6,6 +6,7 @@
     <title>JL Angeles Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,12 +17,14 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <a href="#contact" class="cta-button">Get in Touch</a>
             </ul>
         </nav>
     </header>
-    
+
+ 
     <section id="home">
-        <h1>JL Angeles Portfolio</h1>
+        <button id="theme-toggle">JL Angeles </button><h1>John Lloyd Angeles</h1>
         <img src="images/JL Prof.jpg" alt="Profile Picture" class="profile-img">
         <p>My name is John Lloyd Angeles, and I am an aspiring IT student currently in my second year of studies. I have a strong passion for front-end development, where I enjoy learning visually appealing and user-friendly websites. I am constantly learning and exploring new technologies to enhance my skills in HTML, CSS, JavaScript, and frameworks like React. My goal is to become a proficient front-end developer and contribute to building innovative digital experiences that make a positive impact.</p>
         </p>
@@ -35,7 +38,42 @@
                 Hi, I'm John Lloyd Angeles, a dedicated IT student with a passion for Web Development. I have also an experience in VA/Social Media Management/Marketing with a strong background in marketing and customer service.
             </p>
             <p>Another skills: </p> 
-            <p>front-end: HTML, CSS, JavaScript, data administrative, customer engagement, manager, lead generation.</p>
+            <p>Data Administrative, Customer Engagement Manager, Lead Generation.</p>
+
+            <div class="skill-bar">
+                <p>HTML</p>
+                <div class="bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p>CSS</p>
+                <div class="bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p>Javascript</p>
+                <div class="bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <p>React</p>
+                <div class="bar">
+                    <div class="progress" style="width: 20%;"></div>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <p><i class="fab fa-html5"></i> HTML</p>
+                <p><i class="fab fa-css3-alt"></i> CSS</p>
+                <p><i class="fab fa-js"></i> JavaScript</p>
+                <p><i class="fab fa-react"></i> React</p>
+            </div>
             
         </div>
     </section>
@@ -128,6 +166,15 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2025 JL Angeles. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/johnlloyd.angeles.54" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/loyy_diee/" target="_blank"><img src="images/IG.jpg" alt="Instagram"></a>
+            <a href="https://github.com/lloyd123-del" target="_blank"><img src="images/contact image.jpg" alt="Github"></a>
+        </div>
+    </footer>
     
 </body>
 </html>

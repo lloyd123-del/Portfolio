@@ -1,3 +1,119 @@
+#home {
+    background: linear-gradient(135deg, #6a5acd, #1c1c1c);
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0; 
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* new nga ge add for design for lively if cursor matunong sa image naay transition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*another hover effect para sa design*/
+.project-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/*skills ni nga design*/
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skills p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+/*for button toggle theme (JL Angeles button) */
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+    margin-left: 600px;
+}
+
+body.light-mode nav {
+    background-color: #f4f4f4;
+}
+
+body.light-mode section {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/*para sa skill bar nga design*/
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background-color: #444;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.progress {
+    background-color: #FFC107;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/*para sa get in touch nga button*/
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: #1c1c1c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 700px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -300,4 +416,44 @@ h1, h2, about h2{
     font-size: 18px;
     font-weight: bold;
     color: #444;
+}
+
+/*para sa footer nga design*/
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/*para sa get in touch nga button*/
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: #1c1c1c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 700px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
 }

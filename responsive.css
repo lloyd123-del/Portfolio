@@ -218,3 +218,42 @@ body {
         width: 20px;
     }
 }
+
+/* Responsive Get in Touch Button */
+
+/* 📱 Responsive Adjustments */
+
+/* For Tablets & Small Screens (768px and below) */
+@media (max-width: 768px) {
+    .get-in-touch-btn {
+        top: 15px;
+        right: 15px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .get-in-touch-btn {
+        top: 10px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* For Larger Screens (1200px and above) */
+@media (min-width: 1200px) {
+    .get-in-touch-btn {
+        top: 20px;
+        right: 20px;
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+

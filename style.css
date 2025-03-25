@@ -60,16 +60,7 @@
 }
 
 /* para ni sa homepage nga image, image man akong homepage*/
-body {
-    background-image: url('images/homepage.png'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    height: 100vh; 
-    overflow-y: auto; 
-}
+
 
 /* Fix for homepage para ma scroll2 */
 #home-section {
@@ -82,14 +73,14 @@ body {
 
 #home-section .home-bg {
     width: 100%;
-    height: 100vh; /* para sa homepage image nga e cover full screen */
+    height: 90vh; /* para sa homepage image nga e cover full screen */
     background-size: cover;
     background-position: center;
 }
 
 #home-section .background-img {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     object-fit: cover;
     display: block;
 }
